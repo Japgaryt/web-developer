@@ -7,18 +7,18 @@ if (hamburer) {
   });
 }
 
-// Popup
-const popup = document.querySelector(".popup");
-const closePopup = document.querySelector(".popup-close");
+// ventana
+const ventana = document.querySelector(".ventana");
+const closeventana = document.querySelector(".ventana-close");
 
-if (popup) {
-  closePopup.addEventListener("click", () => {
-    popup.classList.add("hide-popup");
+if (ventana) {
+  closeventana.addEventListener("click", () => {
+    ventana.classList.add("hide-ventana");
   });
 
   window.addEventListener("load", () => {
     setTimeout(() => {
-      popup.classList.remove("hide-popup");
+      ventana.classList.remove("hide-ventana");
     }, 1000);
   });
 }
